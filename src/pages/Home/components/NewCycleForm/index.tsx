@@ -16,6 +16,7 @@ export function NewCycleForm() {
         list="task-suggestions"
         placeholder="Dê um nome para o seu projeto"
         disabled={!!activeCycle}
+        minLength={5}
         {...register('task')}
       />
 

@@ -15,7 +15,7 @@ import { Countdown } from './components/Countdown'
 import { CyclesContext } from '../../contexts/CyclesContext'
 
 const newCycleFormValidationSchema = zod.object({
-  task: zod.string().min(1, 'Informe a tarefa'),
+  task: zod.string().min(6, 'Informe a tarefa com no minimo  6 caracteres'),
   minutesAmount: zod
     .number()
     .min(1, 'O ciclo minimo precisa ser de no mínimo 5 minutos.')
